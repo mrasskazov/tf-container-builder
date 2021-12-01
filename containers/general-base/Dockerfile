@@ -65,7 +65,7 @@ RUN \
     yum install -y $pkgs && \
     source /functions.sh && \
     download_package https://bootstrap.pypa.io pip/2.7/get-pip.py /tmp/get-pip.py && \
-    python2 /tmp/get-pip.py 'pip==20.1' && \
+    python2 /tmp/get-pip.py 'pip==20.3.4' && \
     type -p pip || alternatives --verbose --install /usr/bin/pip pip $(type -p pip2) 100 && \
     type -p python || alternatives --verbose --set python /usr/bin/python2 && \
     yum install -y python3 python3-setuptools && \
